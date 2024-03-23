@@ -137,7 +137,7 @@ main {
 }
 
 .pokemon-estadisticas {
-    width: 500px;
+    width: 650px;
     font-size: .75rem;
     font-weight: 500;
 }
@@ -234,30 +234,30 @@ main {
 
 .attack {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
 
 .defense {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
 
 .specialattack {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
 
 .specialdefense {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
 
 .hp {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
 
 .speed {
     height: 20px;
-    background-color: #78C850;
+    background-color: seagreen;
 }
