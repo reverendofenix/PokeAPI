@@ -3,8 +3,11 @@ const pokedex = document.getElementById('pokedex');
 const fetchPokemon = () => {
     const promises = [];
     const PokemonInput = document.getElementById('pkemonInput').value;
-    const url = `https://pokeapi.co/api/v2/pokemon/${PokemonInput}`;
-    promises.push(fetch(url).then((res) => res.json()));
+    const PokemonArray = PokemonInput.split(',')
+    for (const value of PokemonArray) {
+        const url = `https://pokeapi.co/api/v2/pokemon/${value}`;
+        promises.push(fetch(url).then((res) => res.json()));
+    }
 
     Promise.all(promises).then(results => {
         const pokemon = results.map(data => ({
